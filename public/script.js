@@ -3,6 +3,8 @@ const password = document.getElementById("password");
 const loginBtn = document.getElementById("login-btn");
 const logoutBtn = document.getElementById("logout-btn");
 
+const register_btn = document.getElementById("register-btn");
+
 const bankDiv = document.getElementById("bank");
 const balanceSpan = document.getElementById("balance");
 const amountInput = document.getElementById("amount");
@@ -47,6 +49,9 @@ async function logout() {
   hideBank();
 }
 
+async function register() {
+  alert("Register functionality is not implemented yet.");
+}
 /* =========================
    BANK
 ========================= */
@@ -142,3 +147,4 @@ loginBtn.addEventListener("click", login);
 logoutBtn.addEventListener("click", logout);
 depositBtn.addEventListener("click", deposit);
 withdrawBtn.addEventListener("click", withdraw);
+register_btn.addEventListener("click", register);

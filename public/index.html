@@ -9,12 +9,16 @@
   <body>
     <div class="container">
       <h1>Simple Bank</h1>
+      <button id="logout-btn" hidden>Logout</button>
 
       <div id="auth">
         <input id="username" placeholder="Username" />
         <input id="password" type="password" placeholder="Password" />
         <button id="login-btn">Login</button>
-        <button id="logout-btn" hidden>Logout</button>
+        <span
+          >Don't have an account?
+          <button id="register-btn">Register</button></span
+        >
       </div>
 
       <div id="bank" hidden>
