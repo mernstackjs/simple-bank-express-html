@@ -1,0 +1,181 @@
+/* =========================
+   RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   PAGE
+========================= */
+body {
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* =========================
+   APP CARD
+========================= */
+.container {
+  background: #ffffff;
+  width: 420px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* =========================
+   AUTH
+========================= */
+#auth {
+  text-align: center;
+}
+
+#auth input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#auth button {
+  width: 100%;
+}
+
+/* =========================
+   BANK SECTION
+========================= */
+#bank {
+  margin-top: 10px;
+}
+
+.balance {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.actions input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#deposit-btn {
+  background: #38a169;
+  color: white;
+}
+
+#withdraw-btn {
+  background: #e53e3e;
+  color: white;
+}
+
+#login-btn {
+  background: #667eea;
+  color: white;
+}
+
+#logout-btn {
+  background: #999;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   TRANSACTIONS
+========================= */
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.deposit {
+  border-left: 5px solid #38a169;
+}
+
+.withdraw {
+  border-left: 5px solid #e53e3e;
+}
+
+.tx-type {
+  font-weight: bold;
+}
+
+.tx-date {
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 4px;
+}
